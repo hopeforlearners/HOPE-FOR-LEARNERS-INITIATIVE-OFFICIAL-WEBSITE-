@@ -544,16 +544,7 @@ footer a:hover{
     background-color: #1f6b45;
 }
 /* Scroll Animation */
-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
 
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 .team-card {
     background: white;
     padding: 20px;
