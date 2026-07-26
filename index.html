@@ -395,7 +395,6 @@ Location: Mwingi Central, Kitui County, Kenya
 
 </footer>
 <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
-<script src="script.js"></script>
 
 
 <script>
@@ -416,5 +415,32 @@ function topFunction() {
     });
 }
 </script>
+      <script>
+window.onload = function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.display = "none";
+    }
+};
+
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function () {
+    if (topBtn) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    }
+};
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+      </script>
     </body>
     </html>
