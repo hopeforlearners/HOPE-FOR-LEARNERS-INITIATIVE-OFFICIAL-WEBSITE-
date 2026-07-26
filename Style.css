@@ -614,14 +614,6 @@ footer a:hover{
     z-index: 9999;
 }
 
-#loader img {
-    width: 120px;
-    margin-bottom: 15px;
-}
-
-#loader.hidden {
-    display: none;
-}
 /* Theme Button */
 #themeBtn {
     position: fixed;
