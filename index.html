@@ -317,24 +317,31 @@ and hope to vulnerable learners in our communities.
     <h2>Become a Volunteer</h2>
     <p>Join Hope for Learners Initiative and help transform lives through education.</p>
 
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
+    <form action="https://formsubmit.co/hopeforlearners1@gmail.com" method="POST">
 
-        <select required>
-            <option value="">Select how you would like to help</option>
-            <option>Mentorship</option>
-            <option>Fundraising</option>
-            <option>Community Outreach</option>
-            <option>Event Support</option>
-            <option>Administration</option>
-        </select>
+    <input type="hidden" name="_subject" value="New Volunteer Registration - HLI">
+    <input type="hidden" name="_captcha" value="false">
 
-        <textarea placeholder="Tell us why you would like to volunteer"></textarea>
+    <input type="text" name="full_name" placeholder="Full Name" required>
 
-        <button type="submit">Register as a Volunteer</button>
-    </form>
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <select name="volunteer_area" required>
+        <option value="">Select how you would like to help</option>
+        <option value="Mentorship">Mentorship</option>
+        <option value="Fundraising">Fundraising</option>
+        <option value="Community Outreach">Community Outreach</option>
+        <option value="Event Support">Event Support</option>
+        <option value="Administration">Administration</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell us why you would like to volunteer" required></textarea>
+
+    <button type="submit">Register as a Volunteer</button>
+
+</form>
 </section>
 
 <section id="team">
